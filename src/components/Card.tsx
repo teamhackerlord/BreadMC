@@ -1,7 +1,8 @@
 import { motion } from 'framer-motion';
-import type { ReactNode, HTMLAttributes } from 'react';
+import type { ReactNode } from 'react';
+import type { HTMLMotionProps } from 'framer-motion';
 
-interface CardProps extends HTMLAttributes<HTMLDivElement> {
+interface CardProps extends HTMLMotionProps<'div'> {
   children: ReactNode;
   className?: string;
   variant?: 'default' | 'glass' | 'glass-strong';

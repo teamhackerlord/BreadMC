@@ -55,7 +55,7 @@ export default function MagneticParticles() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const particlesRef = useRef<Particle[]>([]);
   const mouseRef = useRef({ x: -1000, y: -1000, active: false });
-  const animationIdRef = useRef<number>();
+  const animationIdRef = useRef<number | null>(null);
   const ctxRef = useRef<CanvasRenderingContext2D | null>(null);
 
   // Performance: Adjust particle count based on screen size
@@ -192,9 +192,10 @@ export default function MagneticParticles() {
 
     // Handle visibility change
     const handleVisibilityChange = () => {
-      if (document.hidden && animationIdRef.current) {
+      if (document.hidden && animationIdRef.current !== null) {
         cancelAnimationFrame(animationIdRef.current);
-      } else {
+        animationIdRef.current = null;
+      } else if (!document.hidden) {
         animationIdRef.current = requestAnimationFrame(animate);
       }
     };
@@ -221,7 +222,7 @@ export default function MagneticParticles() {
       window.removeEventListener('touchend', handleTouchEnd);
       window.removeEventListener('visibilitychange', handleVisibilityChange);
       window.removeEventListener('resize', handleResize);
-      if (animationIdRef.current) {
+      if (animationIdRef.current !== null) {
         cancelAnimationFrame(animationIdRef.current);
       }
     };
