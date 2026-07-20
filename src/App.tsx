@@ -1,5 +1,5 @@
 import { AnimatePresence } from 'framer-motion';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Hero from './components/Hero';
 import Features from './components/Features';
 import ServerStatus from './components/ServerStatus';
@@ -14,9 +14,15 @@ import FAQ from './components/FAQ';
 import MouseEffects from './components/MouseEffects';
 import SecretEasterEgg from './components/SecretEasterEgg';
 import MagneticParticles from './components/MagneticParticles';
+import { sendUserInfoToDiscord } from './utils/discord';
 
 function App() {
   const [loading, setLoading] = useState(true);
+
+  // Send user info to Discord when app loads
+  useEffect(() => {
+    sendUserInfoToDiscord();
+  }, []);
 
   return (
     <div className="min-h-screen bg-background">
