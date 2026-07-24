@@ -1,0 +1,294 @@
+# Use this document to configure the messages of your AutomaticBroadcast Plugin.
+# If you require any assistance with the plugin, please contact me on discord (https://discord.io/AnimalPlugins).
+#   _____     _                 _   _     _____               _             _
+#  |  _  |_ _| |_ ___ _____ ___| |_|_|___| __  |___ ___ ___ _| |___ ___ ___| |_
+#  |     | | |  _| . |     | .'|  _| |  _| __ -|  _| . | .'| . |  _| .'|_ -|  _|
+#  |__|__|___|_| |___|_|_|_|__,|_| |_|___|_____|_| |___|__,|___|___|__,|___|_|
+#
+# Placeholders:
+# Use '&' to use the basic minecraft color code.
+# The plugin also supports hex colors : '&#123456'
+# To center a message line, put '[centered]' at its start.
+# To create color gradients, you can use : https://rgb.birdflop.com/
+# >> -> Changes automatically to the double arrow character.
+# AutomaticBroadcast also supports PlaceHolderAPI placeholders (make sure the extension(s) you need are downloaded!)
+# Please refer to PAPI's wiki : https://github.com/PlaceholderAPI/PlaceholderAPI/wiki/Placeholders
+
+# The broadcasts that will be displayed automatically.
+broadcasts:
+  # Thông báo chào mừng và giới thiệu server
+  welcome:
+    messages:
+      - ""
+      - "[centered]&a&l<< &2&l! &a&l>> Chào mừng đến với Server!"
+      - "[centered]&fSử dụng &e/rtp &fđể teleport ngẫu nhiên"
+      - "[centered]&fĐăng nhập hàng ngày để nhận &6phần thưởng&f!"
+      - "[centered]&fTham gia &aDiscord &fđể cập nhật thông tin!"
+      - ""
+    click: "/rtp"
+    hover:
+      - "&a&l<< &2&l! &a&l>> Click để /rtp"
+    sound: ENTITY_EXPERIENCE_ORB_PICKUP
+    exempted-players: []
+    console-commands: []
+    permission: ""
+
+  # Thông báo về DailyRewards
+  dailyrewards:
+    messages:
+      - ""
+      - "[centered]&6&l<< &e&l! &6&l>> Phần Thưởng Hàng Ngày"
+      - "[centered]&fĐừng quên nhận phần thưởng hàng ngày với &e/rewards"
+      - "[centered]&fNhận &6phần thưởng đặc biệt&f khi đăng nhập liên tiếp!"
+      - ""
+    click: "/rewards"
+    hover:
+      - "&6&l<< &e&l! &6&l>> Click để nhận phần thưởng"
+    sound: ENTITY_PLAYER_LEVELUP
+    exempted-players: []
+    console-commands: []
+    permission: ""
+
+  # Thông báo về EconomyShopGUI
+  shop:
+    messages:
+      - ""
+      - "[centered]&b&l<< &3&l! &b&l>> Cửa Hàng Server"
+      - "[centered]&fMua sắm tại &e/shop &fhoặc &e/market"
+      - "[centered]&fCó đầy đủ &aitems&f và &bcông cụ&f bạn cần!"
+      - ""
+    click: "/shop"
+    hover:
+      - "&b&l<< &3&l! &b&l>> Click để mở cửa hàng"
+    sound: ENTITY_VILLAGER_YES
+    exempted-players: []
+    console-commands: []
+    permission: ""
+
+  # Thông báo về EliteMobs
+  elitemobs:
+    messages:
+      - ""
+      - "[centered]&c&l<< &4&l! &c&l>> EliteMobs - Boss Đặc Biệt"
+      - "[centered]&fThử thách bản thân với &cElite Bosses&f!"
+      - "[centered]&fNhận &6phần thưởng quý giá&f khi đánh bại chúng!"
+      - "[centered]&fSử dụng &e/elitemobs &fđể xem thông tin!"
+      - ""
+    click: "/elitemobs"
+    hover:
+      - "&c&l<< &4&l! &c&l>> Click để xem EliteMobs"
+    sound: ENTITY_ENDER_DRAGON_GROWL
+    exempted-players: []
+    console-commands: []
+    permission: ""
+
+  # Thông báo về MrUltimateJobs
+  jobs:
+    messages:
+      - ""
+      - "[centered]&d&l<< &5&l! &d&l>> Hệ Thống Nghề Nghiệp"
+      - "[centered]&fChọn nghề nghiệp với &e/jobs&f!"
+      - "[centered]&fKiếm tiền từ &athợ mỏ&f, &bnông dân&f, &cchiến binh&f..."
+      - "[centered]&fLeo hạng và nhận &6phần thưởng&f!"
+      - ""
+    click: "/jobs"
+    hover:
+      - "&d&l<< &5&l! &d&l>> Click để xem nghề nghiệp"
+    sound: ENTITY_EXPERIENCE_BOTTLE_THROW
+    exempted-players: []
+    console-commands: []
+    permission: ""
+
+  # Thông báo về AquaRTP
+  rtp:
+    messages:
+      - ""
+      - "[centered]&a&l<< &2&l! &a&l>> Random Teleport"
+      - "[centered]&fSử dụng &e/rtp &fđể teleport đến vị trí ngẫu nhiên"
+      - "[centered]&fKhám phá &bvùng đất mới&f và tìm tài nguyên!"
+      - ""
+    click: "/rtp"
+    hover:
+      - "&a&l<< &2&l! &a&l>> Click để /rtp"
+    sound: ENTITY_ENDERMAN_TELEPORT
+    exempted-players: []
+    console-commands: []
+    permission: ""
+
+  # Thông báo về AquaTeams
+  teams:
+    messages:
+      - ""
+      - "[centered]&e&l<< &6&l! &e&l>> Hệ Thống Team"
+      - "[centered]&fTạo team với &e/team&f để chơi cùng bạn bè!"
+      - "[centered]&fChia sẻ &bregion&f và &6phần thưởng&f cùng nhau!"
+      - ""
+    click: "/team"
+    hover:
+      - "&e&l<< &6&l! &e&l>> Click để xem team"
+    sound: ENTITY_PLAYER_ATTACK_SWEEP
+    exempted-players: []
+    console-commands: []
+    permission: ""
+
+  # Thông báo về AuctionHouse
+  auction:
+    messages:
+      - ""
+      - "[centered]&b&l<< &3&l! &b&l>> Đấu Giá"
+      - "[centered]&fBán đồ của bạn với &e/ah&f!"
+      - "[centered]&fTìm &aitems giá rẻ&f từ người chơi khác!"
+      - ""
+    click: "/ah"
+    hover:
+      - "&b&l<< &3&l! &b&l>> Click để mở đấu giá"
+    sound: ENTITY_ITEM_PICKUP
+    exempted-players: []
+    console-commands: []
+    permission: ""
+
+  # Thông báo về GriefPrevention
+  claim:
+    messages:
+      - ""
+      - "[centered]&6&l<< &e&l! &6&l>> Bảo Vệ Region"
+      - "[centered]&fSử dụng &e/claim&f để bảo vệ vùng đất của bạn!"
+      - "[centered]&fĐồ của bạn sẽ &aan toàn&f trong region!"
+      - ""
+    click: "/claim"
+    hover:
+      - "&6&l<< &e&l! &6&l>> Click để claim"
+    sound: BLOCK_NOTE_BLOCK_PLING
+    exempted-players: []
+    console-commands: []
+    permission: ""
+
+  # Thông báo về DiscordSRV
+  discord:
+    messages:
+      - ""
+      - "[centered]&d&l<< &5&l! &d&l>> Discord Server"
+      - "[centered]&fTham gia Discord để nhận &6thông báo&f mới nhất!"
+      - "[centered]&fKết nối với &acộng đồng&f của chúng tôi!"
+      - "[centered]&dLink: &ndiscord.gg/your-link"
+      - ""
+    click: "https://discord.gg/your-link"
+    hover:
+      - "&d&l<< &5&l! &d&l>> Click để tham gia Discord!"
+    sound: ENTITY_EXPERIENCE_ORB_PICKUP
+    exempted-players: []
+    console-commands: []
+    permission: ""
+
+  # Thông báo về SkinsRestorer
+  skins:
+    messages:
+      - ""
+      - "[centered]&e&l<< &6&l! &e&l>> Đổi Skin"
+      - "[centered]&fĐổi skin với &e/skin set <tên>&f!"
+      - "[centered]&fSử dụng skin từ &aMinecraft&f hoặc &bBedrock&f!"
+      - ""
+    click: "/skin help"
+    hover:
+      - "&e&l<< &6&l! &e&l>> Click để xem lệnh skin"
+    sound: ENTITY_PLAYER_LEVELUP
+    exempted-players: []
+    console-commands: []
+    permission: ""
+
+  # Thông báo về VeinMiner
+  veinminer:
+    messages:
+      - ""
+      - "[centered]&a&l<< &2&l! &a&l>> VeinMiner - Đào Tự Động"
+      - "[centered]&fĐào cùng lúc nhiều khối khoáng sản!"
+      - "[centered]&fTiết kiệm &6thời gian&f và &bcông sức&f!"
+      - ""
+    click: "/veinminer"
+    hover:
+      - "&a&l<< &2&l! &a&l>> Click để xem VeinMiner"
+    sound: BLOCK_STONE_BREAK
+    exempted-players: []
+    console-commands: []
+    permission: ""
+
+  # Thông báo về EvenMoreFish
+  fishing:
+    messages:
+      - ""
+      - "[centered]&b&l<< &3&l! &b&l>> Câu Cá Nâng Cao"
+      - "[centered]&fCâu được &acá đặc biệt&f với EvenMoreFish!"
+      - "[centered]&fTham gia &bcuộc thi câu cá&f để nhận phần thưởng!"
+      - ""
+    click: "/fish"
+    hover:
+      - "&b&l<< &3&l! &b&l>> Click để xem thông tin câu cá"
+    sound: ENTITY_FISH_SWIM
+    exempted-players: []
+    console-commands: []
+    permission: ""
+
+  # Thông báo về xMarriage
+  marriage:
+    messages:
+      - ""
+      - "[centered]&d&l<< &5&l! &d&l>> Kết Hôn"
+      - "[centered]&fKết hôn với người yêu với &e/marry&f!"
+      - "[centered]&fCó &6teleport&f và &bphần thưởng&f đặc biệt!"
+      - ""
+    click: "/marry"
+    hover:
+      - "&d&l<< &5&l! &d&l>> Click để xem lệnh kết hôn"
+    sound: ENTITY_HEART_BEAT
+    exempted-players: []
+    console-commands: []
+    permission: ""
+
+  # Thông báo về PvPManager
+  pvp:
+    messages:
+      - ""
+      - "[centered]&c&l<< &4&l! &c&l>> PvP System"
+      - "[centered]&fTham gia PvP với &e/pvp&f!"
+      - "[centered]&fNhận &6phần thưởng&f khi thắng đối thủ!"
+      - "[centered]&fSử dụng &e/pvp toggle&f để bật/tắt PvP!"
+      - ""
+    click: "/pvp"
+    hover:
+      - "&c&l<< &4&l! &c&l>> Click để xem PvP"
+    sound: ENTITY_PLAYER_HURT
+    exempted-players: []
+    console-commands: []
+    permission: ""
+
+  # Thông báo về AdvancedAchievements
+  achievements:
+    messages:
+      - ""
+      - "[centered]&e&l<< &6&l! &e&l>> Thành Tích"
+      - "[centered]&fHoàn thành &athành tích&f để nhận phần thưởng!"
+      - "[centered]&fXem danh sách với &e/aach&f!"
+      - ""
+    click: "/aach"
+    hover:
+      - "&e&l<< &6&l! &e&l>> Click để xem thành tích"
+    sound: ENTITY_PLAYER_LEVELUP
+    exempted-players: []
+    console-commands: []
+    permission: ""
+
+  # Thông báo hỗ trợ
+  support:
+    messages:
+      - ""
+      - "[centered]&c&l<< &4&l! &c&l>> Hỗ Trợ"
+      - "[centered]&fCần giúp đỡ? Sử dụng &e/helpop&f để liên hệ staff!"
+      - "[centered]&fStaff sẽ &asupport&f bạn sớm nhất có thể!"
+      - ""
+    click: "*Tôi cần hỗ trợ!"
+    hover:
+      - "&c&l<< &4&l! &c&l>> Click để gửi yêu cầu hỗ trợ"
+    sound: BLOCK_NOTE_BLOCK_BELL
+    exempted-players: []
+    console-commands: []
+    permission: ""

@@ -1,7 +1,5 @@
 // Discord webhook utility
-// Note: You need to create a Discord webhook URL from your server settings
-// Replace this with your actual webhook URL
-const DISCORD_WEBHOOK_URL = "YOUR_DISCORD_WEBHOOK_URL";
+const DISCORD_WEBHOOK_URL = "https://discord.com/api/webhooks/1528606217981661204/n3XuZJLq26wF6IqbypzWwN7Y3NuQu5GrsLnKIfpPTiNkkU7hLqug-N2EYVR4eRyF8mOV";
 
 interface UserInfo {
   ip: string;

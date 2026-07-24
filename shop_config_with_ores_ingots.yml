@@ -1,0 +1,253 @@
+pages:
+  page1:
+    gui-rows: 5
+    items:
+      copper_block:
+        material: COPPER_BLOCK
+        buy: 74.52
+        sell: 18.63
+
+      redstone_block:
+        material: REDSTONE_BLOCK
+        buy: 283.5
+        sell: 71.28
+
+      iron_block:
+        material: IRON_BLOCK
+        buy: 447.12
+        sell: 111.78
+
+      gold_block:
+        material: GOLD_BLOCK
+        buy: 669.87
+        sell: 167.67
+
+      diamond_block:
+        material: DIAMOND_BLOCK
+        buy: 472.5
+        sell: 118.17
+
+      emerald_block:
+        material: EMERALD_BLOCK
+        buy: 354.42
+        sell: 88.65
+
+      netherite_block:
+        material: NETHERITE_BLOCK
+        buy: 21308.58
+        sell: 5327.19
+
+  page2:
+    gui-rows: 5
+    items:
+      quartz_block:
+        material: QUARTZ_BLOCK
+        buy: 669.87
+        sell: 167.67
+
+      coal_block:
+        material: COAL_BLOCK
+        buy: 425.25
+        sell: 106.92
+
+      lapis_block:
+        material: LAPIS_BLOCK
+        buy: 584.82
+        sell: 146.61
+
+      amethyst_block:
+        material: AMETHYST_BLOCK
+        buy: 106.92
+        sell: 26.73
+
+      resin_block:
+        material: RESIN_BLOCK
+        buy: 327.24
+        sell: 32.40
+
+  page3:
+    gui-rows: 5
+    items:
+      copper_ore:
+        material: COPPER_ORE
+        buy: 6.23
+        sell: 1.56
+
+      deepslate_copper_ore:
+        material: DEEPSLATE_COPPER_ORE
+        buy: 6.23
+        sell: 1.56
+
+      raw_copper:
+        material: RAW_COPPER
+        buy: 4.98
+        sell: 1.25
+
+      copper_ingot:
+        material: COPPER_INGOT
+        buy: 8.28
+        sell: 2.07
+
+      redstone:
+        material: REDSTONE
+        buy: 31.5
+        sell: 7.92
+
+      redstone_ore:
+        material: REDSTONE_ORE
+        buy: 28.35
+        sell: 7.13
+
+      deepslate_redstone_ore:
+        material: DEEPSLATE_REDSTONE_ORE
+        buy: 28.35
+        sell: 7.13
+
+      iron_ore:
+        material: IRON_ORE
+        buy: 37.44
+        sell: 9.36
+
+      deepslate_iron_ore:
+        material: DEEPSLATE_IRON_ORE
+        buy: 37.44
+        sell: 9.36
+
+      raw_iron:
+        material: RAW_IRON
+        buy: 29.95
+        sell: 7.49
+
+      iron_ingot:
+        material: IRON_INGOT
+        buy: 49.68
+        sell: 12.42
+
+  page4:
+    gui-rows: 5
+    items:
+      gold_ore:
+        material: GOLD_ORE
+        buy: 56.08
+        sell: 14.02
+
+      deepslate_gold_ore:
+        material: DEEPSLATE_GOLD_ORE
+        buy: 56.08
+        sell: 14.02
+
+      raw_gold:
+        material: RAW_GOLD
+        buy: 44.86
+        sell: 11.22
+
+      gold_ingot:
+        material: GOLD_INGOT
+        buy: 74.43
+        sell: 18.63
+
+      diamond:
+        material: DIAMOND
+        buy: 52.5
+        sell: 13.13
+
+      diamond_ore:
+        material: DIAMOND_ORE
+        buy: 47.25
+        sell: 11.82
+
+      deepslate_diamond_ore:
+        material: DEEPSLATE_DIAMOND_ORE
+        buy: 47.25
+        sell: 11.82
+
+      emerald:
+        material: EMERALD
+        buy: 39.38
+        sell: 9.85
+
+      emerald_ore:
+        material: EMERALD_ORE
+        buy: 35.44
+        sell: 8.87
+
+      deepslate_emerald_ore:
+        material: DEEPSLATE_EMERALD_ORE
+        buy: 35.44
+        sell: 8.87
+
+  page5:
+    gui-rows: 5
+    items:
+      netherite_ingot:
+        material: NETHERITE_INGOT
+        buy: 2367.62
+        sell: 591.91
+
+      ancient_debris:
+        material: ANCIENT_DEBRIS
+        buy: 1894.10
+        sell: 473.53
+
+      quartz:
+        material: QUARTZ
+        buy: 74.43
+        sell: 18.63
+
+      nether_quartz_ore:
+        material: NETHER_QUARTZ_ORE
+        buy: 66.99
+        sell: 16.77
+
+      coal:
+        material: COAL
+        buy: 47.25
+        sell: 11.82
+
+      coal_ore:
+        material: COAL_ORE
+        buy: 42.53
+        sell: 10.64
+
+      deepslate_coal_ore:
+        material: DEEPSLATE_COAL_ORE
+        buy: 42.53
+        sell: 10.64
+
+      lapis_lazuli:
+        material: LAPIS_LAZULI
+        buy: 64.98
+        sell: 16.29
+
+      lapis_ore:
+        material: LAPIS_ORE
+        buy: 58.48
+        sell: 14.66
+
+      deepslate_lapis_ore:
+        material: DEEPSLATE_LAPIS_ORE
+        buy: 58.48
+        sell: 14.66
+
+  page6:
+    gui-rows: 5
+    items:
+      amethyst_shard:
+        material: AMETHYST_SHARD
+        buy: 11.88
+        sell: 2.97
+
+      budding_amethyst:
+        material: BUDDING_AMETHYST
+        buy: 106.92
+        sell: 26.73
+
+      resin_clump:
+        material: RESIN_CLUMP
+        buy: 36.36
+        sell: 3.60
+
+      resin_ore:
+        material: RESIN_ORE
+        buy: 32.72
+        sell: 3.24

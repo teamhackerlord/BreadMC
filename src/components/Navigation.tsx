@@ -1,7 +1,19 @@
 import { motion } from 'framer-motion';
-import { Crown } from 'lucide-react';
+import { Link, useLocation } from 'react-router-dom';
+import { ShoppingCart, Home, Store, Newspaper, Search, Crown } from 'lucide-react';
+import { useCart } from '../context/CartContext';
 
 export default function Navigation() {
+  const location = useLocation();
+  const { cart } = useCart();
+
+  const navItems = [
+    { path: '/', label: 'Trang chủ', icon: <Home className="w-5 h-5" /> },
+    { path: '/store', label: 'Cửa hàng', icon: <Store className="w-5 h-5" /> },
+    { path: '/news', label: 'Tin tức', icon: <Newspaper className="w-5 h-5" /> },
+    { path: '/lookup', label: 'Tra cứu', icon: <Search className="w-5 h-5" /> },
+  ];
+
   return (
     <motion.nav
       className="fixed top-0 left-0 right-0 z-50 glass-strong border-b border-border"
@@ -10,22 +22,38 @@ export default function Navigation() {
       transition={{ duration: 0.6 }}
     >
       <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-16 py-4 flex items-center justify-between">
-        <div className="flex items-center gap-2">
-          <span className="text-2xl font-black text-gradient">BREADMC</span>
-        </div>
+        <Link to="/" className="flex items-center gap-2">
+          <Crown className="w-8 h-8 text-gradient" />
+          <span className="text-2xl font-black text-gradient pixel-font">BREADMC</span>
+        </Link>
         
-        <motion.div
-          className="flex items-center gap-2 glass px-4 py-2 rounded-full"
-          whileHover={{ scale: 1.05 }}
-          transition={{ duration: 0.2 }}
-        >
-          <Crown className="w-4 h-4 text-primary" />
-          <span className="text-sm font-medium text-gray-300">
-            Owner: <span className="text-primary font-bold">BOCW</span>
-            <span className="text-gray-500 mx-1">•</span>
-            <span className="text-gray-400">King of code</span>
-          </span>
-        </motion.div>
+        <div className="hidden md:flex items-center gap-1">
+          {navItems.map((item) => (
+            <Link
+              key={item.path}
+              to={item.path}
+              className={`flex items-center gap-2 px-4 py-2 rounded-xl transition-all ${
+                location.pathname === item.path
+                  ? 'bg-gradient-purple-cyan text-white'
+                  : 'text-gray-300 hover:text-white hover:bg-white/5'
+              }`}
+            >
+              {item.icon}
+              <span>{item.label}</span>
+            </Link>
+          ))}
+        </div>
+
+        <Link to="/cart" className="relative">
+          <div className="flex items-center gap-2 glass px-4 py-2 rounded-xl hover:bg-white/10 transition-all">
+            <ShoppingCart className="w-5 h-5 text-white" />
+            {cart.length > 0 && (
+              <span className="absolute -top-2 -right-2 w-6 h-6 bg-secondary rounded-full text-xs font-bold flex items-center justify-center">
+                {cart.length}
+              </span>
+            )}
+          </div>
+        </Link>
       </div>
     </motion.nav>
   );

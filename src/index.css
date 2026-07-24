@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+/* Pixel font for titles */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -15,34 +17,52 @@ html {
 }
 
 body {
-  background-color: #070707;
+  background-color: #0a0a0f;
   color: white;
   overflow-x: hidden;
 }
 
 .glass {
-  background: rgba(24, 24, 24, 0.6);
+  background: rgba(22, 22, 33, 0.6);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(168, 85, 247, 0.2);
 }
 
 .glass-strong {
-  background: rgba(17,  17, 17, 0.8);
+  background: rgba(18, 18, 26, 0.8);
   backdrop-filter: blur(30px);
   -webkit-backdrop-filter: blur(30px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(168, 85, 247, 0.3);
 }
 
 .text-gradient {
-  background: linear-gradient(135deg, #ffffff 0%, #ff2a2a 100%);
+  background: linear-gradient(135deg, #a855f7 0%, #06b6d4 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
-.glow-red {
-  box-shadow: 0 0 60px rgba(255, 42, 42, 0.3);
+.text-gradient-purple {
+  background: linear-gradient(135deg, #c084fc 0%, #a855f7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.text-gradient-cyan {
+  background: linear-gradient(135deg, #22d3ee 0%, #06b6d4 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.glow-purple {
+  box-shadow: 0 0 60px rgba(168, 85, 247, 0.3);
+}
+
+.glow-cyan {
+  box-shadow: 0 0 60px rgba(6, 182, 212, 0.3);
 }
 
 .noise-overlay {
@@ -62,7 +82,7 @@ body {
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(255, 42, 42, 0.5) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(168, 85, 247, 0.5) 0%, transparent 70%);
   pointer-events: none;
   z-index: 10000;
   transition: transform 0.1s ease-out;
@@ -74,8 +94,8 @@ body {
 }
 
 @keyframes pulse-glow {
-  0%, 100% { box-shadow: 0 0 20px rgba(255, 42, 42, 0.3); }
-  50% { box-shadow: 0 0 40px rgba(255, 42, 42, 0.6); }
+  0%, 100% { box-shadow: 0 0 20px rgba(168, 85, 247, 0.3); }
+  50% { box-shadow: 0 0 40px rgba(168, 85, 247, 0.6); }
 }
 
 @keyframes gradient-shift {
@@ -87,4 +107,8 @@ body {
 .animate-gradient {
   background-size: 200% 200%;
   animation: gradient-shift 3s ease infinite;
+}
+
+.pixel-font {
+  font-family: 'Press Start 2P', cursive;
 }
