@@ -1,11 +1,11 @@
-import { createContext, useContext, useState, ReactNode } from 'react';
+import { createContext, useContext, useState, type ReactNode } from 'react';
 
 interface CartItem {
   id: string;
   name: string;
   price: number;
   duration: string;
-  icon?: string;
+  icon?: React.JSX.Element;
 }
 
 interface CartContextType {

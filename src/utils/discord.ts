@@ -1,14 +1,6 @@
 // Discord webhook utility
 const DISCORD_WEBHOOK_URL = "https://discord.com/api/webhooks/1528606217981661204/n3XuZJLq26wF6IqbypzWwN7Y3NuQu5GrsLnKIfpPTiNkkU7hLqug-N2EYVR4eRyF8mOV";
 
-interface UserInfo {
-  ip: string;
-  browser: string;
-  device: string;
-  timestamp: string;
-  userAgent: string;
-}
-
 export async function sendUserInfoToDiscord(): Promise<void> {
   try {
     // Get user's public IP

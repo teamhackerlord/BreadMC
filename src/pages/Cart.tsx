@@ -7,7 +7,6 @@ import {
   Copy, 
   CheckCircle2, 
   Globe, 
-  MessageCircle, 
   Users
 } from 'lucide-react';
 import { useCart } from '../context/CartContext';
